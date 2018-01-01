@@ -4,7 +4,7 @@ import {
     FormattedNumberProps,
     FormattedPluralProps,
     FormattedTimeProps,
-    FormattedDateProps
+    FormattedDateProps,
 } from '../src/types'
 
 export declare const FormattedDate: SFC<FormattedDateProps>

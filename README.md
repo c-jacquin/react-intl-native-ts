@@ -13,11 +13,11 @@
 
 ## Install
 ```bash
-npm i react-intl-native -S
+npm i react-intl-native-ts -S
 ```
 or
 ```bash
-yarn add react-intl-native
+yarn add react-intl-native-ts
 ```
 
 ## Presentation
@@ -30,4 +30,3 @@ yarn add react-intl-native
  - react-native
 
 ## Example
-

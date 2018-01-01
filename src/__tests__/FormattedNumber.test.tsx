@@ -10,7 +10,7 @@ describe('FormattedNumber', () => {
             .create(
                 <IntlProvider locale="en">
                     <FormattedNumber style={{}} value={'foo'} />
-                </IntlProvider>
+                </IntlProvider>,
             )
             .toJSON()
         expect(tree).toMatchSnapshot()

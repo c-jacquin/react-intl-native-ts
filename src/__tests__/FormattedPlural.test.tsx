@@ -15,7 +15,7 @@ describe('FormattedPlural', () => {
                         value={'foo'}
                         other={<Text>Foo</Text>}
                     />
-                </IntlProvider>
+                </IntlProvider>,
             )
             .toJSON()
         expect(tree).toMatchSnapshot()

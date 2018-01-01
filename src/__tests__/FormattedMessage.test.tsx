@@ -11,7 +11,7 @@ describe('FormattedMessage', () => {
             .create(
                 <IntlProvider locale="en" messages={{  bar: 'foo' }}>
                     <FormattedMessage style={{}} id={'bar'} />
-                </IntlProvider>
+                </IntlProvider>,
             )
             .toJSON()
         expect(tree).toMatchSnapshot()

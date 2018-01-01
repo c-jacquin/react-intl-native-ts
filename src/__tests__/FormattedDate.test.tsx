@@ -10,7 +10,7 @@ describe('FormattedDate', () => {
             .create(
                 <IntlProvider locale="en">
                     <FormattedDate style={{}} value={1500} />
-                </IntlProvider>
+                </IntlProvider>,
             )
             .toJSON()
         expect(tree).toMatchSnapshot()

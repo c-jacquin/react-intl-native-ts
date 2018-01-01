@@ -11,7 +11,7 @@ describe('FormattedTime', () => {
             .create(
                 <IntlProvider locale="en">
                     <FormattedTime style={{}} value={1500} />
-                </IntlProvider>
+                </IntlProvider>,
             )
             .toJSON()
         expect(tree).toMatchSnapshot()

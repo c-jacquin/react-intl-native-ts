@@ -72,7 +72,7 @@ module.exports = {
             cover: {
                 description: 'run test with istanbul test coverage',
                 script: series(
-                    'NODE_ENV=test jest --coverage',
+                    'NODE_ENV=test jest --coverage --updateSnapshot',
                     'node scripts/test/remap-coverage',
                     'rimraf .temp -r'
                 ),

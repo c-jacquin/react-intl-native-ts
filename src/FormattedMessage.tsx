@@ -5,13 +5,7 @@ import { Text } from 'react-native'
 import { FormattedMessageProps } from './types'
 
 const NativeFormattedMessage: SFC<FormattedMessageProps> = props => (
-    <FormattedMessage {...props}>
-        {(localized: string) => (
-            <Text style={props.style}>
-                {localized}
-            </Text>
-        )}
-    </FormattedMessage>
+  <FormattedMessage {...props}>{(localized: string) => <Text style={props.style}>{localized}</Text>}</FormattedMessage>
 )
 
 export default NativeFormattedMessage

@@ -45,13 +45,6 @@ module.exports = {
                 'NODE_ENV=production webpack',
             ),
         },
-        styleguide: {
-            description: 'build the styleguide (documentation)',
-            script: series(
-                'rimraf docs',
-                'styleguidist build'
-            ),
-        },
         test: {
             default: {
                 description: 'run all the test once',

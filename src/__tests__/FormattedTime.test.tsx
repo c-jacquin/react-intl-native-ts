@@ -6,14 +6,14 @@ import { IntlProvider } from 'react-intl'
 import FormattedTime from '../FormattedTime'
 
 describe('FormattedTime', () => {
-    it('should renders correctly', () => {
-        const tree = renderer
-            .create(
-                <IntlProvider locale="en">
-                    <FormattedTime style={{}} value={1500} />
-                </IntlProvider>,
-            )
-            .toJSON()
-        expect(tree).toMatchSnapshot()
-    })
+  it('should renders correctly', () => {
+    const tree = renderer
+      .create(
+        <IntlProvider locale="en">
+          <FormattedTime style={{}} value={1500} />
+        </IntlProvider>,
+      )
+      .toJSON()
+    expect(tree).toMatchSnapshot()
+  })
 })

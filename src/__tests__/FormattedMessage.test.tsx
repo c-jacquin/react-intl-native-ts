@@ -6,14 +6,14 @@ import { IntlProvider } from 'react-intl'
 import FormattedMessage from '../FormattedMessage'
 
 describe('FormattedMessage', () => {
-    it('should renders correctly', () => {
-        const tree = renderer
-            .create(
-                <IntlProvider locale="en" messages={{  bar: 'foo' }}>
-                    <FormattedMessage style={{}} id={'bar'} />
-                </IntlProvider>,
-            )
-            .toJSON()
-        expect(tree).toMatchSnapshot()
-    })
+  it('should renders correctly', () => {
+    const tree = renderer
+      .create(
+        <IntlProvider locale="en" messages={{ bar: 'foo' }}>
+          <FormattedMessage style={{}} id={'bar'} />
+        </IntlProvider>,
+      )
+      .toJSON()
+    expect(tree).toMatchSnapshot()
+  })
 })

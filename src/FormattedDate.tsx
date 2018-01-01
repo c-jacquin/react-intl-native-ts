@@ -5,11 +5,7 @@ import { Text } from 'react-native'
 import { FormattedDateProps } from './types'
 
 const NativeFormattedDate: SFC<FormattedDateProps> = props => (
-    <FormattedDate {...props}>
-        {(localized: string) => (
-            <Text style={props.style}>{localized}</Text>
-        )}
-    </FormattedDate>
+  <FormattedDate {...props}>{(localized: string) => <Text style={props.style}>{localized}</Text>}</FormattedDate>
 )
 
 export default NativeFormattedDate

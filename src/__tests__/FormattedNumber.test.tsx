@@ -5,14 +5,14 @@ import { IntlProvider } from 'react-intl'
 import FormattedNumber from '../FormattedNumber'
 
 describe('FormattedNumber', () => {
-    it('should renders correctly', () => {
-        const tree = renderer
-            .create(
-                <IntlProvider locale="en">
-                    <FormattedNumber style={{}} value={'foo'} />
-                </IntlProvider>,
-            )
-            .toJSON()
-        expect(tree).toMatchSnapshot()
-    })
+  it('should renders correctly', () => {
+    const tree = renderer
+      .create(
+        <IntlProvider locale="en">
+          <FormattedNumber style={{}} value={'foo'} />
+        </IntlProvider>,
+      )
+      .toJSON()
+    expect(tree).toMatchSnapshot()
+  })
 })

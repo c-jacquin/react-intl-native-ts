@@ -4,10 +4,4 @@ import FormattedNumber from './FormattedNumber'
 import FormattedPlural from './FormattedPlural'
 import FormattedTime from './FormattedTime'
 
-export {
-    FormattedDate,
-    FormattedMessage,
-    FormattedNumber,
-    FormattedPlural,
-    FormattedTime,
-}
+export { FormattedDate, FormattedMessage, FormattedNumber, FormattedPlural, FormattedTime }

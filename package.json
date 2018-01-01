@@ -36,6 +36,7 @@
     "awesome-typescript-loader": "^3.4.1",
     "babel-jest": "^22.0.4",
     "babel-plugin-jest-hoist": "^22.0.3",
+    "babel-preset-expo": "^4.0.0",
     "commitizen": "^2.9.6",
     "coveralls": "^3.0.0",
     "cz-conventional-changelog": "^2.1.0",
@@ -77,10 +78,14 @@
     ]
   },
   "babel": {
-    "presets": ["babel-preset-expo"],
+    "presets": [
+      "babel-preset-expo"
+    ],
     "env": {
       "development": {
-        "plugins": ["transform-react-jsx-source"]
+        "plugins": [
+          "transform-react-jsx-source"
+        ]
       }
     }
   }

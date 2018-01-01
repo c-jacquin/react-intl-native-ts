@@ -1,5 +1,5 @@
 {
-  "name": "react-intl-native",
+  "name": "react-intl-native-ts",
   "description": "helpers component to use react-intl with react-native",
   "version": "0.0.0-development",
   "author": "Charles Jacquin <charles.jacquin@gmail.com>",

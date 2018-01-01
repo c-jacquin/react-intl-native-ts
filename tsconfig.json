@@ -18,7 +18,8 @@
         "alwaysStrict": true,
         "moduleResolution": "node",
         "allowSyntheticDefaultImports": true,
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "skipLibCheck": true
     },
     "include": [
         "src"

@@ -5,7 +5,8 @@
         "align": false,
         "no-empty": false,  
         "only-arrow-functions": false,
-        "no-implicit-dependencies": false,   
+        "no-implicit-dependencies": false,
+        "jsx-no-multiline-js": false,
         "member-ordering": {
             "options":{
                 "order": [

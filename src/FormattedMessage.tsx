@@ -1,4 +1,4 @@
-import React, { createElement, SFC } from 'react'
+import React, { SFC } from 'react'
 import { FormattedMessage } from 'react-intl'
 import { Text } from 'react-native'
 

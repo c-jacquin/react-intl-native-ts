@@ -1,0 +1,21 @@
+language: node_js
+cache:
+  directories:
+    - ~/.npm
+notifications:
+  email: false
+node_js:
+  - '8'
+install:
+  - git checkout master
+  - npm i
+script:
+  - npm start validate
+after_success:
+  - npm start release
+  - npm start coveralls
+branches:
+  only:
+    - master
+  except:
+    - /^v\d+\.\d+\.\d+$/

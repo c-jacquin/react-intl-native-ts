@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "allowJs": true,
+        "jsx": "react",
+        "sourceMap": true,
+        "outDir": "dist",
+        "rootDir": "./src",
+        "removeComments": true,
+        "lib":["es2016", "es2017"],
+        "strict": true,
+        "baseUrl": "./src",
+        "strictFunctionTypes": false,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true
+    },
+    "include": [
+        "src"
+    ]
+}

@@ -14,7 +14,12 @@ module.exports = {
     },
     externals: [
         {
-            react: 'react',
+            react: {
+                root: 'React',
+                commonjs2: 'react',
+                commonjs: 'react',
+                amd: 'react'
+            },
             'react-intl': 'react-intl',
             'react-native': 'react-native'
         }
@@ -30,7 +35,7 @@ module.exports = {
                 enforce: 'pre',
                 loader: 'tslint-loader',
                 options: {
-                    tsConfigFile: 'tsconfig.json'                    
+                    tsConfigFile: 'tsconfig.json'
                 }
             },
             {

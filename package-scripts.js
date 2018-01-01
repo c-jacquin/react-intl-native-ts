@@ -7,7 +7,7 @@ module.exports = {
     scripts: {
         default: {
             description: 'run and watch the example',
-            script: 'styleguidist server',            
+            script: 'rollup -c rollup/es.js --watch',
         },
         commit: {
             description: 'commit using conventionnal changelog',
@@ -42,7 +42,8 @@ module.exports = {
             script: series(
                 'rimraf dist -r',
                 'mkdir dist',
-                'NODE_ENV=production webpack',
+                'NODE_ENV=production rollup -c rollup/cjs.js',
+                'NODE_ENV=production rollup -c rollup/es.js'
             ),
         },
         test: {
@@ -52,7 +53,7 @@ module.exports = {
             },
             watch: {
                 description: 'run in the amazingly intelligent Jest watch mode',
-                script: 'NODE_ENV=test jest --watch',            
+                script: 'NODE_ENV=test jest --watch',
             },
             cover: {
                 description: 'run test with istanbul test coverage',
